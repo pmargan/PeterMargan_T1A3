@@ -4,4 +4,110 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+.top-container {
+  background: url(../docs/wooden-desk.jpg);
+  width: 100vw;
+  height: 50vh;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border-bottom: 2px solid black;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+a {
+  margin: 0.5rem .7rem;
+}
+
+.twitter {
+  margin-left: auto;
+  padding: .5rem;
+  color: white;
+}
+
+.github {
+  color: white;
+  padding: .5rem;
+}
+
+.linkedin {
+  color: white;
+  padding: .5rem;
+}
+
+.dropbtn {
+  color: white;
+  padding: .5rem;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: 40;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.fa-bars:hover {
+  display: block;
+}
+
+.dropbtn:hover .dropdown-content {
+  display: block;
+}
+
+.dropbtn:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+header {
+  padding: 2rem 0 0 2rem;
+  min-width: 150px;
+  /* offset-x | offset-y | blur-radius | color */
+  text-shadow: 1px 1px 5px white;
+}
+
+.message {
+  font-size: 3rem;
+  text-shadow: 1px 1px 5px white;
+}
+
+.info {
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 2rem;
+  text-align: center;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+footer {
+  font-size: .6rem;
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */
