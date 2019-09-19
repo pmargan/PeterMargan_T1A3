@@ -12,10 +12,12 @@
 nav {
     display: flex;
     justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
     border-bottom: 2px solid black; 
     background: rgba(0, 0, 0, 0.5)
 }
-a {margin: 0.5rem .7rem;}
+// a {margin: 0.5rem .7rem;}
 .twitter{ 
     margin-left: auto;
     padding: .5rem;
@@ -24,6 +26,7 @@ a {margin: 0.5rem .7rem;}
 .github{
     color: white;
     padding: .5rem;
+    margin-right: 1rem;
 }
 .linkedin{
     color: white;
@@ -31,9 +34,14 @@ a {margin: 0.5rem .7rem;}
 }
 .dropbtn{
     color: white;
-    padding: .5rem;
+    padding: .5rem .5rem 0 .5rem;
 }
-    
+ 
+div.dropdown-content{
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
 .dropdown-content {
     display: none;
     position: absolute;
@@ -49,19 +57,21 @@ a {margin: 0.5rem .7rem;}
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
 
 .fa-bars:hover{
     display: block; 
 }
 .dropbtn:hover .dropdown-content {
     display: block;
-}
-
-.dropbtn:hover .dropbtn {
-    background-color: #3e8e41;
+    padding-bottom: 0;
 }
 
 header {
@@ -82,7 +92,7 @@ header {
 }
 main {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
 }
 
 footer {
