@@ -5,13 +5,15 @@
           box-sizing: border-box;
 }
 
-.top-container {
+body .top-container {
   background: url(../docs/wooden-desk.jpg);
   width: 100vw;
   height: 50vh;
+  min-width: 399px;
 }
 
 nav {
+  width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24,8 +26,8 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-bottom: 2px solid black;
-  background: rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid black;
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .twitter {
@@ -94,6 +96,7 @@ header {
   min-width: 150px;
   /* offset-x | offset-y | blur-radius | color */
   text-shadow: 1px 1px 5px white;
+  text-shadow: -2px -2px 5px white;
 }
 
 .message {
@@ -110,12 +113,25 @@ header {
 main {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(325px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+  -ms-grid-columns: (minmax(380px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+}
+
+.bottom-container {
+  background: black;
 }
 
 footer {
   font-size: .6rem;
   text-align: center;
+  font-family: monospace;
+}
+
+.columns {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-flow: column;
 }
 /*# sourceMappingURL=style.css.map */
