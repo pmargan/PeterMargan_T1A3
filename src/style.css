@@ -1,3 +1,145 @@
+figcaption {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.wrapper-about > p {
+  padding: 10px 5px 10px 15px;
+}
+
+.wrapper-about {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: ". head head head ." ". meercats meercat merecat ." ". linux  root code ." ". serverbuilds buildpc code ." ". foot foot foot .";
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  gap: 2px;
+  padding: 10px;
+  font-size: 1.5em;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#6f7070));
+  background: linear-gradient(#ffffff, #6f7070);
+}
+
+@media (max-width: 700px) {
+  .wrapper-about {
+        grid-template-areas: "head" "meercats" "meercat" "merecat" "linux" "root" "code" "serverbuilds" "buildpc" "foot";
+  }
+}
+
+#header-about-me {
+  padding: 0;
+  margin-top: 0;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-area: head;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.meercats {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: meercats;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: lightgray;
+}
+
+#meercat {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: meercat;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: lightgray;
+}
+
+#merecat {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: merecat;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: lightgray;
+}
+
+.linux {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: linux;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#root {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: root;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: lightgray;
+}
+
+.buildpc {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: buildpc;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: lightgray;
+}
+
+.serverbuilds {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: serverbuilds;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: lightgray;
+}
+
+.code {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  grid-area: code;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: lightgray;
+}
+
+#foot {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-area: foot;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.1rem;
+  color: black;
+  text-align: center;
+  background: lightgray;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -5,18 +147,29 @@
           box-sizing: border-box;
 }
 
-body .top-container {
+.top-container {
   background: url(../docs/wooden-desk.jpg);
   width: 100vw;
   height: 50vh;
   min-width: 399px;
 }
 
+.fa {
+  -webkit-transition: all 0;
+  transition: all 0;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
 nav {
-  width: 100vw;
+  height: 70px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -27,13 +180,21 @@ nav {
       -ms-flex-pack: center;
           justify-content: center;
   border-bottom: 1px solid black;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .twitter {
   margin-left: auto;
+  margin-right: 1rem;
   padding: .5rem;
   color: white;
+}
+
+.twitter:hover {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .github {
@@ -42,14 +203,30 @@ nav {
   margin-right: 1rem;
 }
 
+.github:hover {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
 .linkedin {
   color: white;
   padding: .5rem;
+  margin-right: 1rem;
+}
+
+.linkedin:hover {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .dropbtn {
   color: white;
   padding: .5rem .5rem 0 .5rem;
+  margin-left: 1rem;
 }
 
 div.dropdown-content {
@@ -62,10 +239,11 @@ div.dropdown-content {
   position: absolute;
   left: 40;
   background-color: #f9f9f9;
-  min-width: 100px;
+  width: 160px;
   -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
   z-index: 1;
+  text-align: center;
 }
 
 .dropdown-content a {
@@ -83,6 +261,10 @@ div.dropdown-content {
 }
 
 .fa-bars:hover {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transform: scale(2.5);
+          transform: scale(2.5);
   display: block;
 }
 
@@ -110,7 +292,7 @@ header {
   text-align: center;
 }
 
-main {
+#tech-pics {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(380px, 1fr))[auto-fit];
@@ -118,20 +300,14 @@ main {
 }
 
 .bottom-container {
-  background: black;
+  background: #272727;
+  height: 100%;
 }
 
-footer {
-  font-size: .6rem;
+#index-footer {
+  color: black;
+  font-size: 1.1rem;
   text-align: center;
-  font-family: monospace;
-}
-
-.columns {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-auto-flow: column;
+  padding: 10px 0 10px 0;
 }
 /*# sourceMappingURL=style.css.map */
