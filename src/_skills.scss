@@ -10,11 +10,25 @@
 
     grid-template-columns: 200px 3fr 200px; 
     grid-template-rows: auto; 
-    font-size: 1.75rem;
+    gap: 3px;
+    font-size: 1.5rem;
 
     background: linear-gradient(#ffffff, #6f7070);
 }
-@media (max-width: 600px) {
+@media (max-width: 901px) {
+    .skills-wrapper {
+        font-size: 1.5rem;
+    }
+}
+@media (min-width: 1300px) {
+    .skills-wrapper {
+        font-size: 2rem;
+    }
+}
+
+
+
+@media (max-width: 700px) {
     .skills-wrapper {
         gap: 2px;
         font-size: 1rem;
@@ -29,11 +43,6 @@
             "aside-left aside-right"
             "skills-foot skills-foot";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
   
-    }
-}
-@media (max-width: 900px) {
-    .skills-wrapper {
-        font-size: 1.5rem;
     }
 }
 
@@ -63,4 +72,12 @@
     // margin: 1rem;
     align-self: auto;
 
+}
+.article1 .article3{
+    background-color: #ffffff;
+    z-index: 2;
+}
+.article2 .article4{
+    background-color: aqua;
+    z-index: 2;
 }
