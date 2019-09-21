@@ -1,4 +1,6 @@
 @import "about";
+@import "skills";
+@import "blog";
 
 *{
     padding: 0;
@@ -103,7 +105,7 @@ div.dropdown-content{
     padding-bottom: 0;
 }
 
-header {
+#header-index{
     padding: 2rem 0 0 2rem;
     min-width: 150px; 
       

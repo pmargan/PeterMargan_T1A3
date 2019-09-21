@@ -140,6 +140,89 @@ figcaption {
   background: lightgray;
 }
 
+.skills-wrapper {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "skills-h1 skills-h1 skills-h1" "aside-left skills-article aside-right" "aside-left skills-article aside-right" "aside-left skills-article aside-right" "aside-left skills-article aside-right" "aside-left skills-foot aside-right";
+  -ms-grid-columns: 200px 3fr 200px;
+      grid-template-columns: 200px 3fr 200px;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  font-size: 1.75rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#6f7070));
+  background: linear-gradient(#ffffff, #6f7070);
+}
+
+@media (max-width: 600px) {
+  .skills-wrapper {
+    gap: 2px;
+    font-size: 1rem;
+        grid-template-areas: "skills-h1 skills-h1" "skills-article skills-article" "skills-article skills-article" "aside-left aside-right" "aside-left aside-right" "aside-left aside-right" "aside-left aside-right" "aside-left aside-right" "skills-foot skills-foot";
+  }
+}
+
+@media (max-width: 900px) {
+  .skills-wrapper {
+    font-size: 1.5rem;
+  }
+}
+
+.skills-h1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: skills-h1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.skills-article {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 2;
+  grid-area: skills-article;
+  padding: 2rem 1rem;
+  -ms-flex-item-align: auto;
+      -ms-grid-row-align: auto;
+      align-self: auto;
+}
+
+#aside-left {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 5;
+  -ms-grid-column: 1;
+  grid-area: aside-left;
+  -ms-flex-item-align: auto;
+      -ms-grid-row-align: auto;
+      align-self: auto;
+}
+
+#aside-right {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 5;
+  -ms-grid-column: 3;
+  grid-area: aside-right;
+  -ms-flex-item-align: auto;
+      -ms-grid-row-align: auto;
+      align-self: auto;
+}
+
+#skills-foot {
+  -ms-grid-row: 6;
+  -ms-grid-column: 2;
+  grid-area: skills-foot;
+  text-align: center;
+  -ms-flex-item-align: auto;
+      -ms-grid-row-align: auto;
+      align-self: auto;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -273,7 +356,7 @@ div.dropdown-content {
   padding-bottom: 0;
 }
 
-header {
+#header-index {
   padding: 2rem 0 0 2rem;
   min-width: 150px;
   /* offset-x | offset-y | blur-radius | color */
