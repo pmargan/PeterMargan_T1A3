@@ -323,11 +323,13 @@ h4.article4 {
 }
 
 div#twitter {
-  width: 300px;
+  width: 310px;
   height: auto;
   border: 2px solid #0c5586;
-  margin: 0 auto;
+  margin: 50px auto;
+  padding: 10px 1px 10px 30px;
   background: #cac8c8;
+  border-radius: 8px;
 }
 
 * {
