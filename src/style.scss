@@ -1,6 +1,7 @@
 @import "about";
 @import "skills";
 @import "blog";
+@import "twitter";
 
 *{
     padding: 0;
@@ -30,7 +31,14 @@ nav {
     border-bottom: 1px solid black; 
     background: rgba(0, 0, 0, 0.7)
 }
-// a {margin: 0.5rem .7rem;}
+
+.contact{
+    margin-left: 2rem;
+    font-size: 1rem;
+    color: white;
+}
+
+
 .twitter{ 
     margin-left: auto;
     margin-right: 1rem;
@@ -107,7 +115,8 @@ div.dropdown-content{
 
 #header-index{
     padding: 2rem 0 0 2rem;
-    min-width: 150px; 
+    min-width: 150px;
+    font-size: 1.5rem; 
       
        /* offset-x | offset-y | blur-radius | color */
         text-shadow: 1px 1px 5px white; 

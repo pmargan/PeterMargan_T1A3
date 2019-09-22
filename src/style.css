@@ -240,6 +240,96 @@ figcaption {
   z-index: 2;
 }
 
+.skills-h3 {
+  padding: 0.7rem;
+  margin-bottom: 0;
+  border: 1px 1px 0px 1px solid grey;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background: #e0d5d5;
+}
+
+.skills-h2 {
+  padding: 0.7rem;
+  margin-top: 0;
+  border: 0px 1px 1px 1px solid grey;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  background: #e0d5d5;
+}
+
+h4.article1 {
+  margin-top: 1.5rem;
+}
+
+h4.article2 {
+  margin-top: 1.5rem;
+}
+
+h4.article3 {
+  margin-top: 1.5rem;
+}
+
+h4.article4 {
+  margin-top: 1.5rem;
+}
+
+#blog-nav {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: nav;
+  background: url(../docs/wooden-desk.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.blog-header {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: blog-header;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.blog-container {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "nav nav" "blog-header blog-header";
+  -ms-grid-columns: 1fr 200px;
+      grid-template-columns: 1fr 200px;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  gap: 5px;
+  text-align-last: center;
+  background: rgba(66, 66, 66, 0.2);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.peter1 .peter2 .peter3 .peter4 .peter5 {
+  grid-area: picture;
+}
+
+.blog1 .blog2 .blog3 .blog4 .blog5 {
+  grid-area: post;
+  font-size: 2em;
+}
+
+div#twitter {
+  width: 300px;
+  height: auto;
+  border: 2px solid #0c5586;
+  margin: 0 auto;
+  background: #cac8c8;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -281,6 +371,12 @@ nav {
           justify-content: center;
   border-bottom: 1px solid black;
   background: rgba(0, 0, 0, 0.7);
+}
+
+.contact {
+  margin-left: 2rem;
+  font-size: 1rem;
+  color: white;
 }
 
 .twitter {
@@ -376,6 +472,7 @@ div.dropdown-content {
 #header-index {
   padding: 2rem 0 0 2rem;
   min-width: 150px;
+  font-size: 1.5rem;
   /* offset-x | offset-y | blur-radius | color */
   text-shadow: 1px 1px 5px white;
   text-shadow: -2px -2px 5px white;
