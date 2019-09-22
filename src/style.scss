@@ -32,17 +32,20 @@ nav {
     background: rgba(0, 0, 0, 0.7)
 }
 
+// 1)Common component across all pages styled picture 
 .me{
     border-radius: 50%;
     margin-left: 1.5rem;
 }
 
+// 2)Common component across all pages text
 .contact{
     margin-left: 0.5rem;
     font-size: 1rem;
     color: white;
 }
 
+// 3)Common component across all pages
 .twitter{ 
     margin-left: auto;
     margin-right: 1rem;
@@ -53,6 +56,8 @@ nav {
     transition: all 0.3s;
     transform: scale(1.3)
 }
+
+// 4)Common component across all pages
 .github{
     color: white;
     padding: .5rem;
@@ -71,6 +76,7 @@ nav {
     transition: all 0.3s;
     transform: scale(1.3)
 }
+// 4) Common component across all pages
 .dropbtn{
     color: white;
     padding: .5rem .5rem 0 .5rem;
@@ -144,7 +150,7 @@ div.dropdown-content{
     height: 100%;
 }
 
-#index-footer {
+#index-footer, #blog-footer{
     color: black;
     font-size: 1.1rem;
     text-align: center;

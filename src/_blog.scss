@@ -1,3 +1,4 @@
+// style the blog nav bar
 #blog-nav{
     grid-area: nav;
     background: url(../docs/wooden-desk.jpg);
@@ -6,13 +7,13 @@
     width: 100%;
     justify-content: center;
 }
-
+// style the blog header
 .blog-header{
     grid-area: blog-header;
     text-align: center;
     font-size: 2rem;    
 }
-
+// layout main content with grid
 .blog-container{
     display: grid;
     grid-template-areas:

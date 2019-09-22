@@ -506,7 +506,7 @@ div.dropdown-content {
   height: 100%;
 }
 
-#index-footer {
+#index-footer, #blog-footer {
   color: black;
   font-size: 1.1rem;
   text-align: center;

@@ -1,3 +1,4 @@
+// layout the skills page using grid
 .skills-wrapper{
     display: grid;
     grid-template-areas:
@@ -15,6 +16,7 @@
 
     background: linear-gradient(#ffffff, #6f7070);
 }
+// change font sizing to suit different size screens
 @media (max-width: 901px) {
     .skills-wrapper {
         font-size: 1.5rem;
@@ -27,7 +29,7 @@
 }
 
 
-
+// change layout for smaller screens
 @media (max-width: 700px) {
     .skills-wrapper {
         gap: 2px;
@@ -45,7 +47,7 @@
   
     }
 }
-
+// style the main content/articles
 .skills-h1{
     grid-area: skills-h1;
     justify-content: center;

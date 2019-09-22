@@ -8,7 +8,7 @@ figcaption{
 .wrapper-about > p{
     padding: 10px 5px 10px 15px;
 }
-
+// start grid layout
 .wrapper-about{
     display: grid;  
     grid-template-areas:
@@ -24,6 +24,7 @@ figcaption{
     font-size: 1.5em; 
     background: linear-gradient(#ffffff, #6f7070); 
 }
+// change layout to suit smaller screens
 @media (max-width: 700px) {
     .wrapper-about {
       grid-template-areas:
@@ -40,7 +41,7 @@ figcaption{
     }
   }
 
-
+// styling the main content below here
 #header-about-me{
     padding: 0;
     margin-top: 0;
@@ -93,6 +94,7 @@ figcaption{
     justify-content: center;
     background-color: lightgray;
 }
+// style the footer
 #foot{
     grid-area: foot;
     justify-content: center;
