@@ -1,8 +1,8 @@
 ## Personal Portfolio
 
-link to Portfolio: 
+link to Portfolio: https://github.com/pmargan/pmargan.github.io/src
 
-link to github repo:
+link to github repo: https://github.com/pmargan/PeterMargan_T1A3
 
 ### Purpose
 
@@ -28,7 +28,6 @@ languages used = HTML & CSS
 used Imported graphics & fonts.
 
 ### Site Map
-not sure how to get it in here.
-have made one though
+<img src="./docs/profilesiteflow.png" alt="site map">
 
-pictures of site also created but dont know how to put them in markwon file.
+
